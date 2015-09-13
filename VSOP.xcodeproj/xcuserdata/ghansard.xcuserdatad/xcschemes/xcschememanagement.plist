@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>VSOPTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1D82A4EA1BA3701E00D8E88D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D82A4F81BA3703900D8E88D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

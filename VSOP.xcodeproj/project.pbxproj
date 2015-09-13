@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D82A4EF1BA3701E00D8E88D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D82A4EE1BA3701E00D8E88D /* main.cpp */; };
+		1D82A4FC1BA3703900D8E88D /* VSOPTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D82A4FB1BA3703900D8E88D /* VSOPTests.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,23 @@
 /* Begin PBXFileReference section */
 		1D82A4EB1BA3701E00D8E88D /* VSOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VSOP; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D82A4EE1BA3701E00D8E88D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1D82A4F91BA3703900D8E88D /* VSOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D82A4FB1BA3703900D8E88D /* VSOPTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VSOPTests.mm; sourceTree = "<group>"; };
+		1D82A4FD1BA3703900D8E88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D82A5011BA3705200D8E88D /* VSOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSOP.h; sourceTree = "<group>"; };
+		1D82A5021BA3D8F600D8E88D /* Disposable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Disposable.h; sourceTree = "<group>"; };
+		1D82A5031BA3DF1E00D8E88D /* Observable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1D82A4E81BA3701E00D8E88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D82A4F61BA3703900D8E88D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1D82A4ED1BA3701E00D8E88D /* VSOP */,
+				1D82A4FA1BA3703900D8E88D /* VSOPTests */,
 				1D82A4EC1BA3701E00D8E88D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1D82A4EB1BA3701E00D8E88D /* VSOP */,
+				1D82A4F91BA3703900D8E88D /* VSOPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,20 @@
 			isa = PBXGroup;
 			children = (
 				1D82A4EE1BA3701E00D8E88D /* main.cpp */,
+				1D82A5011BA3705200D8E88D /* VSOP.h */,
+				1D82A5021BA3D8F600D8E88D /* Disposable.h */,
+				1D82A5031BA3DF1E00D8E88D /* Observable.h */,
 			);
 			path = VSOP;
+			sourceTree = "<group>";
+		};
+		1D82A4FA1BA3703900D8E88D /* VSOPTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D82A4FB1BA3703900D8E88D /* VSOPTests.mm */,
+				1D82A4FD1BA3703900D8E88D /* Info.plist */,
+			);
+			path = VSOPTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,23 @@
 			productReference = 1D82A4EB1BA3701E00D8E88D /* VSOP */;
 			productType = "com.apple.product-type.tool";
 		};
+		1D82A4F81BA3703900D8E88D /* VSOPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D82A4FE1BA3703900D8E88D /* Build configuration list for PBXNativeTarget "VSOPTests" */;
+			buildPhases = (
+				1D82A4F51BA3703900D8E88D /* Sources */,
+				1D82A4F61BA3703900D8E88D /* Frameworks */,
+				1D82A4F71BA3703900D8E88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VSOPTests;
+			productName = VSOPTests;
+			productReference = 1D82A4F91BA3703900D8E88D /* VSOPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +137,9 @@
 				ORGANIZATIONNAME = "From Concentrate Software";
 				TargetAttributes = {
 					1D82A4EA1BA3701E00D8E88D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1D82A4F81BA3703900D8E88D = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -109,9 +157,20 @@
 			projectRoot = "";
 			targets = (
 				1D82A4EA1BA3701E00D8E88D /* VSOP */,
+				1D82A4F81BA3703900D8E88D /* VSOPTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D82A4F71BA3703900D8E88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D82A4E71BA3701E00D8E88D /* Sources */ = {
@@ -119,6 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D82A4EF1BA3701E00D8E88D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D82A4F51BA3703900D8E88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D82A4FC1BA3703900D8E88D /* VSOPTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +283,28 @@
 			};
 			name = Release;
 		};
+		1D82A4FF1BA3703900D8E88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VSOPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.VSOPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D82A5001BA3703900D8E88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VSOPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromconcentratesoftware.VSOPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +322,14 @@
 			buildConfigurations = (
 				1D82A4F31BA3701E00D8E88D /* Debug */,
 				1D82A4F41BA3701E00D8E88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D82A4FE1BA3703900D8E88D /* Build configuration list for PBXNativeTarget "VSOPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D82A4FF1BA3703900D8E88D /* Debug */,
+				1D82A5001BA3703900D8E88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
