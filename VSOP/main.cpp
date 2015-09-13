@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include "VSOP.h"
 
-int main(int argc, const char * argv[]) {
-	// insert code here...
-	std::cout << "Hello, World!\n";
-    return 0;
+class Foo
+{
+public:
+	FCS::Property<int> bar;
+};
+
+int main(int argc, const char * argv[])
+{
+	Foo foo {};
+	{
+		auto observer = foo.bar << [](int change) { std::cout << "Foo.bar changed to " << change << std::endl; };
+		foo.bar = 1;
+	}
+	foo.bar = 2;
+	return 0;
 }
